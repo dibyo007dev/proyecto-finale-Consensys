@@ -168,7 +168,7 @@ contract BiddingContract {
     }
 
     // registered sellers can add products for bidding
-    function addProductForBid(uint _productId, string memory _productName, uint256 _bidStartPrice, uint32 _sessionValue) public isRegisteredSeller(msg.sender) returns(bool){
+    function addProductForBid(uint _productId, string memory _productName, uint256 _bidStartPrice, uint32 _sessionValue) public isRegisteredSeller(msg.sender) stopInEmergency returns(bool){
 
         // update the product mapping
         product[_productId].productName = _productName;
@@ -209,7 +209,7 @@ contract BiddingContract {
 
     // bidding on a certain product
 
-    function Bid(uint _productId, uint _bidValue) inSession(_productId) public returns(bool) { // modifier to check the session is still there
+    function Bid(uint _productId, uint _bidValue) inSession(_productId) public stopInEmergency returns(bool)  { // modifier to check the session is still there
         // check if msg.sender has enough balance
         require(tokenContract.balanceOf(msg.sender) >= _bidValue, "not enough balance");
             // check if bid is higher than previous bid event 

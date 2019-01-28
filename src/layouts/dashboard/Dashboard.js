@@ -17,6 +17,9 @@ class Dashboard extends Component {
               you're seeing this page, you've logged in with UPort successfully.
             </p>
             <p>
+              <strong>You Can Go for Bidding in The Auction</strong>
+            </p>
+            <p>
               <strong>Your Phone Number is {this.props.authData.phone}</strong>
             </p>
           </div>
