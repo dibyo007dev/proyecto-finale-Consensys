@@ -1,1 +1,1 @@
-Token Used for transactions in the Auction Space
+DeAuction (2018-2019 Developer Program Final Project)
