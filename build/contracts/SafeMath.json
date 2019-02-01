@@ -3280,6 +3280,12 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0xeEC6AA136A3E52b040269dab1E1C1E5d7C85812c",
+      "transactionHash": "0xce0e241a2938d7dc41ff56e59c3927aa5b82f598c2658854f10b54f4fad9837a"
+    },
     "1548612470090": {
       "events": {},
       "links": {},
@@ -3288,7 +3294,7 @@
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-27T23:39:36.574Z",
+  "updatedAt": "2019-02-01T04:13:28.920Z",
   "devdoc": {
     "details": "Unsigned math operations with safety checks that revert on error",
     "methods": {},
