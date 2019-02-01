@@ -1,3 +1,19 @@
+//https://rinkeby.infura.io/v3/8cbf86fab8e54099900e489f0db2d39d
+
+const HDWalletProvider = require("truffle-hdwallet-provider");
+
+const fs = require("fs");
+const fs2 = require("fs");
+
+const infuraKey = fs
+  .readFileSync(".infuraKey")
+  .toString()
+  .trim();
+const mnemonic = fs2
+  .readFileSync(".mnemonic")
+  .toString()
+  .trim();
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  **/
@@ -22,6 +38,11 @@ module.exports = {
 
     rinkeby: {
       host: "localhost",
+      provider: () =>
+        new HDWalletProvider(
+          mnemonic,
+          `https://rinkeby.infura.io/v3/${infuraKey}`
+        ),
       port: 8545,
       network_id: 4,
       gas: 4700000

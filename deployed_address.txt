@@ -1,0 +1,6 @@
+# Rinkeby Address
+
+Main Bidding Contract Address : 0xA07E21Bd5cCa96872393a0246F3Eb243698610dF
+
+Link to Contract : https://rinkeby.etherscan.io/address/0xA07E21Bd5cCa96872393a0246F3Eb243698610dF
+

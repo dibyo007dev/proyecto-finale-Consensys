@@ -6,6 +6,13 @@ This application allows any user holding "AucSters" tokens to bid simultaniously
 
 FUTURE PLANS : Everything in the Token Transferring phase will be handled by a Supply Chain.
 
+## FrontEnd Published in IPFS:
+
+Visit the link below :
+https://gateway.ipfs.io/ipfs/QmVRsS1cKv4Ryzg2k9KvmuTzitZJH9zaq1tZrni6Y79EkT
+
+In case it doesn't work feel free to contract
+
 ## Setting up
 
 This application is based in truffle box [react-uport](https://truffleframework.com/boxes/react-uport).
@@ -48,6 +55,6 @@ To start the app :
 
 Now a Browser window will popup and You can Login to the APP with Uport
 
-## Interaction Iniial Setup :
+## Interaction Initial Setup :
 
 First it is needed to move some ASS tokens from the admin to the Bidding Contract which will further faclitates the token buying and further Bidding.
